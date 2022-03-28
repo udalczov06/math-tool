@@ -14,15 +14,12 @@ def pickAction():
     log('5 - возвести в факториал')
     log('6 - возвести в квадрат')
     log('7 - вычесление корня')
-    log('8 - вычисление значения синуса')
-    log('9 - вычисление значения косинуса')
-    log('10 - нахождение площадей,периметров и обьемов')
+    log('8 - нахождение площадей,периметров и обьемов')
     log('Выберете действие:')
     return inputNum()
 
 action = pickAction()
-
-if action == 1:
+def addition():
     log('Введите первое слaгаемое:')
     a = inputNum()
     log('Введите  второе  слaгаемое:')
@@ -31,14 +28,16 @@ if action == 1:
     c = inputNum()
     d = a + b + c
     log('Сумма чисел',a,',',b,',',c,'в сумме дает',d)
-elif action == 2:
+
+def subtraction():
     log('Введите уменьшаемое:')
     a = inputNum()
     log('Введите вычитаемое:')
     b = inputNum()
     d = a - b
     log('Разность чисел',a,'и',b,'дает',d)
-elif action == 3:
+
+def multiplication():
     log('Введите первый множитель:')
     a = inputNum()
     log('Введите  второй множитель:')
@@ -47,48 +46,63 @@ elif action == 3:
     c = inputNum()
     d = a * b * c
     log(d)
-elif action == 4:
+
+def division():
     log('Введите делимое:')
     a = inputNum()
     log('Введите делитель:')
     b = inputNum()
     d = a / b
     log(d)
-elif action == 5:
+
+def factorial():
     log('Введите число, которое хотите возвести в факториал:')
     a = inputNum()
     d = factorial(a)
     log(d)
-elif action == 6:
+
+def squareNumber():
     log('Введите число, которое хотите возвести в квадрат:')
     a = inputNum()
     d = a*a
     log(d)
-elif action == 7:
+
+def rootNumber():
     log('Введите число,из которого хотите найти корень:')
     a = inputNum()
     d = sqrt (a)
     log(d)
-elif action == 8:
-    log('Введите значение катета:')
-    x = inputNum()
-    log('Введите значение гипотенузы:')
-    y = inputNum()
-    d = x / y
-    log(d)
-elif action == 9:
-    log('Введите значение катета:')
-    x = inputNum()
-    log('Введите значение гипотенузы:')
-    y = inputNum()
-    d = x / y
-    log(d)
-elif action == 10:
+
+def subAction():
     log('1 - периметры')
     log('2 - площади')
     log('3 - объемы')
     log('Выберете дальнейшее действие:')
-    nextAction = inputNum()
+    return inputNum()
+nextAction = subAction()
+if action == 1:
+    addition()
+
+elif action == 2:
+    subtraction()
+
+elif action == 3:
+    multiplication()
+
+elif action == 4:
+    division()
+
+elif action == 5:
+    factorial()
+
+elif action == 6:
+    squareNumber()
+
+elif action == 7:
+    rootNumber()
+
+elif action == 8:
+    subAction()
     if nextAction == 1:
         log('1 - круг')
         log('2 - прямоугольник/параллелограмм')
@@ -107,7 +121,7 @@ elif action == 10:
                 r = inputNum()
                 Q = 2 * pi* r
                 log(Q)
-            if size == 2:
+            else:
                 log('Введите значение радиуса:')
                 r = inputNum()
                 log('Введите значение угла:')
@@ -149,7 +163,7 @@ elif action == 10:
                 b = inputNum()
                 P = a * 2 + b
                 log(P)
-            if typeOfTriangle == 3:
+            else:
                 log('Введите значение стороны:')
                 a = inputNum()
                 P = a * 3
@@ -170,7 +184,7 @@ elif action == 10:
                 d = inputNum()
                 P = a + b + c + d
                 log(P)
-            if typeOfTrapezoid == 2:
+            else:
                 log('Введите длину боковой стороны:')
                 a = inputNum()
                 log('Введите длину верхнего основания:')
