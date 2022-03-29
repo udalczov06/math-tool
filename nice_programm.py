@@ -273,13 +273,13 @@ def volumeCube():
     V = a**3
     print(V)
 
-def volumeFigureTwo():
+def volumeBall():
     log('Введите значение радиуса')
     r = inputNum()
     V = 3/4 * pi* r
     print(V)
 
-def volumeFigureThree():
+def volumeParallelepiped():
     log('Bведите размер площади основания')
     S = inputNum()
     log('Bведите длину высоты')
@@ -382,9 +382,9 @@ elif action == 8:
         shapes = volumeFigures()
 
         if shapes == 1:
-            volumeube()
+            volumeCube()
 
         if shapes == 2:
-            volumeFigureTwo()
+            volumeBall()
         if shapes == 3:
-            volumeFigureThree()
+            volumeParallelepiped()
