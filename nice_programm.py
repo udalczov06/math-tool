@@ -108,7 +108,7 @@ def arcLengthFormula():
     Q = ( b * pi* r)/180
     log(Q)
 
-def figureTwo():
+def rectangle():
     log('Введите значение  одной стороны:')
     a = inputNum()
     log('Введите значение другой стороны:')
@@ -116,12 +116,12 @@ def figureTwo():
     P = (a+b)*2
     log(P)
 
-def figureThree():
+def square():
     log('Введите значение стороны:')
     a = inputNum()
     P = a * 4
     log(P)
-def figureFour():
+def triangle():
     log('Какоц вид треугольника?')
     log('1 - произвольный')
     log('2 - Равнобедренный')
@@ -153,7 +153,7 @@ def equilateralTriangle():
     P = a * 3
     log(P)
 
-def figureFive():
+def trapezoid():
     log('1 - произвольная')
     log('2 - равнобедренная')
     log('Выберете вид трапеции:')
@@ -192,13 +192,13 @@ def secondFigures():
     log('Введите номер фигуры:')
     return inputNum()
 
-def squaresFiguresOne():
+def squaresСircle():
     log('Введите значение радиуса:')
     r = inputNum()
     Q = pi* r * r
     log(Q)
 
-def squaresFiguresTwo():
+def squaresRectangle():
     log('Введите значение  одной стороны:')
     a = inputNum()
     log('Введите значение другой стороны:')
@@ -206,13 +206,13 @@ def squaresFiguresTwo():
     S = a * b
     log(S)
 
-def squaresFiguresThree():
+def squaresSquare():
     log('Введите значение стороны:')
     a = inputNum()
     S = a * a
     log(S)
 
-def squaresFiguresFour():
+def squaresTriangle():
     log('Введите значение стороны:')
     a = inputNum()
     log('Введите значение высоты:')
@@ -220,7 +220,7 @@ def squaresFiguresFour():
     S = a * b
     log(S)
 
-def squaresFiguresFive():
+def squaresTrapezoid():
     log('Введите значение основания стороны:')
     a = inputNum()
     log('Введите значение основания стороны:')
@@ -230,7 +230,7 @@ def squaresFiguresFive():
     S =(a + b * h) / 2
     log(S)
 
-def squaresFiguresSix():
+def squaresRhomb():
     log('1 - 1/2 произведение диагоналей')
     log('2 - сторона и высота ')
     log('Выберете способ:')
@@ -252,7 +252,7 @@ def formulaForFindingTwo():
     S = a * h
     log(S)
 
-def squaresFiguresSeven():
+def squaresParallelogram():
     log('Введите значение основания:')
     a = inputNum()
     log('Введите значение высоты:')
@@ -267,7 +267,7 @@ def volumeFigures():
     log('Введите номер фигуры:')
     return inputNum()
 
-def volumeFigureOne():
+def volumeCube():
     log('Введите размер грани')
     a = inputNum()
     V = a**3
@@ -323,13 +323,13 @@ elif action == 8:
                 arcLengthFormula()
 
         if shapes == 2:
-            shapes = figureTwo()
+            shapes = rectangle()
 
         if shapes == 3:
-            shapes = figureThree()
+            shapes = square()
 
         if shapes == 4:
-            typeOfTriangle = figureFour()
+            typeOfTriangle = triangle()
 
             if typeOfTriangle == 1:
                 arbitraryTriangle()
@@ -340,7 +340,7 @@ elif action == 8:
                equilateralTriangle()
 
         if shapes == 5:
-            typeOfTrapezoid = figureFive()
+            typeOfTrapezoid = trapezoid()
 
             if typeOfTrapezoid == 1:
                 arbitraryTrapezoid()
@@ -352,22 +352,22 @@ elif action == 8:
         shapes = secondFigures()
 
         if shapes == 1:
-            squaresFiguresOne()
+            squaresСircle()
 
         if shapes == 2:
-            squaresFiguresTwo()
+            squaresRectangle()
 
         if shapes == 3:
-           squaresFiguresThree()
+           squaresSquare()
 
         if shapes == 4:
-            squaresFiguresFour()
+            squaresTriangle()
 
         if shapes == 5:
-            squaresFiguresFive()
+            squaresTrapezoid()
 
         if  shapes == 6:
-            methodOfFinding = squaresFiguresSix()
+            methodOfFinding = squaresRhomb()
 
             if methodOfFinding == 1:
                 formulaForFindingOne()
@@ -376,16 +376,15 @@ elif action == 8:
                 formulaForFindingTwo()
 
         if shapes == 7:
-            squaresFiguresSeven()
+            squaresParallelogram()
 
     if nextAction == 3:
         shapes = volumeFigures()
 
         if shapes == 1:
-            volumeFigureOne()
+            volumeube()
 
         if shapes == 2:
             volumeFigureTwo()
-
         if shapes == 3:
             volumeFigureThree()
