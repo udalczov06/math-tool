@@ -286,6 +286,77 @@ def volumeParallelepiped():
     h = inputNum()
     V = S * h
     print(V)
+
+def perimeter():
+    if shapes == 1:
+        size = circleSize()
+
+        if size == 1:
+            formulaСircumference()
+
+        else:
+            arcLengthFormula()
+
+    if shapes == 2:
+        shapes = rectangle()
+
+    if shapes == 3:
+        shapes = square()
+
+    if shapes == 4:
+        typeOfTriangle = triangle()
+
+        if typeOfTriangle == 1:
+            arbitraryTriangle()
+
+        if typeOfTriangle == 2:
+            isoscelesTriangle()
+        else:
+            equilateralTriangle()
+
+    if shapes == 5:
+        typeOfTrapezoid = trapezoid()
+
+        if typeOfTrapezoid == 1:
+            arbitraryTrapezoid()
+
+        else:
+            isoscelesTrapezoid()
+def square():
+    if shapes == 1:
+        squaresСircle()
+
+    if shapes == 2:
+        squaresRectangle()
+
+    if shapes == 3:
+        squaresSquare()
+
+    if shapes == 4:
+        squaresTriangle()
+
+    if shapes == 5:
+        squaresTrapezoid()
+
+    if  shapes == 6:
+        methodOfFinding = squaresRhomb()
+
+        if methodOfFinding == 1:
+            formulaForFindingOne()
+
+        else:
+            formulaForFindingTwo()
+
+    if shapes == 7:
+        squaresParallelogram()
+def volume():
+    if shapes == 1:
+        volumeCube()
+
+    if shapes == 2:
+        volumeBall()
+    if shapes == 3:
+        volumeParallelepiped()
 if action == 1:
     addition()
 
@@ -313,78 +384,12 @@ elif action == 8:
     if nextAction == 1:
         shapes = figure()
 
-        if shapes == 1:
-            size = circleSize()
-
-            if size == 1:
-                formulaСircumference()
-
-            else:
-                arcLengthFormula()
-
-        if shapes == 2:
-            shapes = rectangle()
-
-        if shapes == 3:
-            shapes = square()
-
-        if shapes == 4:
-            typeOfTriangle = triangle()
-
-            if typeOfTriangle == 1:
-                arbitraryTriangle()
-
-            if typeOfTriangle == 2:
-                isoscelesTriangle()
-            else:
-               equilateralTriangle()
-
-        if shapes == 5:
-            typeOfTrapezoid = trapezoid()
-
-            if typeOfTrapezoid == 1:
-                arbitraryTrapezoid()
-
-            else:
-                isoscelesTrapezoid()
+        perimeter()
 
     if nextAction == 2:
         shapes = secondFigures()
-
-        if shapes == 1:
-            squaresСircle()
-
-        if shapes == 2:
-            squaresRectangle()
-
-        if shapes == 3:
-           squaresSquare()
-
-        if shapes == 4:
-            squaresTriangle()
-
-        if shapes == 5:
-            squaresTrapezoid()
-
-        if  shapes == 6:
-            methodOfFinding = squaresRhomb()
-
-            if methodOfFinding == 1:
-                formulaForFindingOne()
-
-            else:
-                formulaForFindingTwo()
-
-        if shapes == 7:
-            squaresParallelogram()
+        square()
 
     if nextAction == 3:
         shapes = volumeFigures()
-
-        if shapes == 1:
-            volumeCube()
-
-        if shapes == 2:
-            volumeBall()
-        if shapes == 3:
-            volumeParallelepiped()
+        volume()
