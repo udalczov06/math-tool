@@ -54,11 +54,12 @@ def division():
     d = a / b
     log(d)
 
-def factorial():
+def Factorial():
     log('Введите число, которое хотите возвести в факториал:')
     a = inputNum()
     d = factorial(a)
     log(d)
+    return inputNum()
 
 def squareNumber():
     log('Введите число, которое хотите возвести в квадрат:')
@@ -373,7 +374,7 @@ elif action == 4:
     division()
 
 elif action == 5:
-    factorial()
+    Factorial()
 
 elif action == 6:
     squareNumber()
