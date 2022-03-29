@@ -321,6 +321,7 @@ def perimeter():
 
         else:
             isoscelesTrapezoid()
+
 def square():
     if shapes == 1:
         squaresСircle()
@@ -348,6 +349,7 @@ def square():
 
     if shapes == 7:
         squaresParallelogram()
+
 def volume():
     if shapes == 1:
         volumeCube()
