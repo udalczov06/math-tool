@@ -18,7 +18,6 @@ def pickAction():
     log('Выберете действие:')
     return inputNum()
 
-action = pickAction()
 def addition():
     log('Введите первое слaгаемое:')
     a = inputNum()
@@ -357,6 +356,8 @@ def volume():
         volumeBall()
     if shapes == 3:
         volumeParallelepiped()
+
+action = pickAction()
 if action == 1:
     addition()
 
