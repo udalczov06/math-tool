@@ -79,7 +79,213 @@ def subAction():
     log('3 - объемы')
     log('Выберете дальнейшее действие:')
     return inputNum()
-nextAction = subAction()
+
+def figure():
+    log('1 - круг')
+    log('2 - прямоугольник/параллелограмм')
+    log('3 - квадрат/ромб')
+    log('4 - треугольник')
+    log('5 - трапеция')
+    log('Введите номер фигуры')
+    return inputNum()
+
+def circleSize():
+    log('1 - вся окружность')
+    log('2 - длина дуги')
+    log('Выбирайте размер:')
+    return inputNum()
+
+def formulaСircumference():
+    log('Введите значение радиуса:')
+    r = inputNum()
+    Q = 2 * pi* r
+    log(Q)
+def arcLengthFormula():
+    log('Введите значение радиуса:')
+    r = inputNum()
+    log('Введите значение угла:')
+    b = inputNum()
+    Q = ( b * pi* r)/180
+    log(Q)
+
+def figureTwo():
+    log('Введите значение  одной стороны:')
+    a = inputNum()
+    log('Введите значение другой стороны:')
+    b = inputNum()
+    P = (a+b)*2
+    log(P)
+
+def figureThree():
+    log('Введите значение стороны:')
+    a = inputNum()
+    P = a * 4
+    log(P)
+def figureFour():
+    log('Какоц вид треугольника?')
+    log('1 - произвольный')
+    log('2 - Равнобедренный')
+    log('3 - равносторонний')
+    log('Выберите вид треугольника:')
+    return inputNum()
+
+def arbitraryTriangle():
+    log('Введите значение первой стороны:')
+    a = inputNum()
+    log('Введите значение второй стороны:')
+    b = inputNum()
+    log('Введите значение третьей стороны:')
+    c = inputNum()
+    P = a + b + c
+    log(P)
+
+def isoscelesTriangle():
+    log('Введите значение боковой стороны:')
+    a = inputNum()
+    log('Введите значение основания треугольника:')
+    b = inputNum()
+    P = a * 2 + b
+    log(P)
+
+def equilateralTriangle():
+    log('Введите значение стороны:')
+    a = inputNum()
+    P = a * 3
+    log(P)
+
+def figureFive():
+    log('1 - произвольная')
+    log('2 - равнобедренная')
+    log('Выберете вид трапеции:')
+    return inputNum()
+
+def arbitraryTrapezoid():
+    log('Введите значение первой стороны:')
+    a = inputNum()
+    log('Введите значение второй стороны:')
+    b = inputNum()
+    log('Введите значение третьей стороны:')
+    c = inputNum()
+    log('Введите значение четвертой стороны:')
+    d = inputNum()
+    P = a + b + c + d
+    log(P)
+
+def isoscelesTrapezoid():
+    log('Введите длину боковой стороны:')
+    a = inputNum()
+    log('Введите длину верхнего основания:')
+    b = inputNum()
+    log('Введите длину нижнего основания стороны:')
+    c = inputNum()
+    P = a * 2 + b + c
+    log(P)
+
+def secondFigures():
+    log('1 - круг')
+    log('2 - прямоугольник')
+    log('3 - квадрат')
+    log('4 - треугольник')
+    log('5 - трапеция')
+    log('6 - ромб')
+    log('7 - параллелограмм')
+    log('Введите номер фигуры:')
+    return inputNum()
+
+def squaresFiguresOne():
+    log('Введите значение радиуса:')
+    r = inputNum()
+    Q = pi* r * r
+    log(Q)
+
+def squaresFiguresTwo():
+    log('Введите значение  одной стороны:')
+    a = inputNum()
+    log('Введите значение другой стороны:')
+    b = inputNum()
+    S = a * b
+    log(S)
+
+def squaresFiguresThree():
+    log('Введите значение стороны:')
+    a = inputNum()
+    S = a * a
+    log(S)
+
+def squaresFiguresFour():
+    log('Введите значение стороны:')
+    a = inputNum()
+    log('Введите значение высоты:')
+    b = inputNum()
+    S = a * b
+    log(S)
+
+def squaresFiguresFive():
+    log('Введите значение основания стороны:')
+    a = inputNum()
+    log('Введите значение основания стороны:')
+    b = inputNum()
+    log('Введите значение высоты:')
+    h = inputNum()
+    S =(a + b * h) / 2
+    log(S)
+
+def squaresFiguresSix():
+    log('1 - 1/2 произведение диагоналей')
+    log('2 - сторона и высота ')
+    log('Выберете способ:')
+    return inputNum()
+
+def formulaForFindingOne():
+    log('Введите длину  первой диагонали:')
+    d1 = inputNum()
+    log('Введите длину второй диагонали:')
+    d2 = inputNum()
+    S = 0.5 * d1 * d2
+    log(S)
+
+def formulaForFindingTwo():
+    log('Введите значение основания:')
+    a = inputNum()
+    log('Введите значение высоты:')
+    h = inputNum()
+    S = a * h
+    log(S)
+
+def squaresFiguresSeven():
+    log('Введите значение основания:')
+    a = inputNum()
+    log('Введите значение высоты:')
+    h = inputNum()
+    S = a * h
+    log(S)
+
+def volumeFigures():
+    log('1 - куб')
+    log('2 - шар')
+    log('3 - параллелепипед')
+    log('Введите номер фигуры:')
+    return inputNum()
+
+def volumeFigureOne():
+    log('Введите размер грани')
+    a = inputNum()
+    V = a**3
+    print(V)
+
+def volumeFigureTwo():
+    log('Введите значение радиуса')
+    r = inputNum()
+    V = 3/4 * pi* r
+    print(V)
+
+def volumeFigureThree():
+    log('Bведите размер площади основания')
+    S = inputNum()
+    log('Bведите длину высоты')
+    h = inputNum()
+    V = S * h
+    print(V)
 if action == 1:
     addition()
 
@@ -102,186 +308,84 @@ elif action == 7:
     rootNumber()
 
 elif action == 8:
-    subAction()
+    nextAction = subAction()
+
     if nextAction == 1:
-        log('1 - круг')
-        log('2 - прямоугольник/параллелограмм')
-        log('3 - квадрат/ромб')
-        log('4 - треугольник')
-        log('5 - трапеция')
-        log('Введите номер фигуры')
-        shapes = inputNum()
+        shapes = figure()
+
         if shapes == 1:
-            log('1 - вся окружность')
-            log('2 - длина дуги')
-            log('Выбирайте размер:')
-            size = inputNum()
+            size = circleSize()
+
             if size == 1:
-                log('Введите значение радиуса:')
-                r = inputNum()
-                Q = 2 * pi* r
-                log(Q)
+                formulaСircumference()
+
             else:
-                log('Введите значение радиуса:')
-                r = inputNum()
-                log('Введите значение угла:')
-                b = inputNum()
-                Q = ( b * pi* r)/180
-                print(Q)
+                arcLengthFormula()
+
         if shapes == 2:
-            log('Введите значение  одной стороны:')
-            a = inputNum()
-            log('Введите значение другой стороны:')
-            b = inputNum()
-            P = (a+b)*2
-            log(P)
+            shapes = figureTwo()
+
         if shapes == 3:
-            log('Введите значение стороны:')
-            a = inputNum()
-            P = a * 4
-            log(P)
+            shapes = figureThree()
+
         if shapes == 4:
-            log('Какоц вид треугольника?')
-            log('1 - произвольный')
-            log('2 - Равнобедренный')
-            log('3 - равносторонний')
-            log('Выберите вид треугольника:')
-            typeOfTriangle = inputNum()
+            typeOfTriangle = figureFour()
+
             if typeOfTriangle == 1:
-                log('Введите значение первой стороны:')
-                a = inputNum()
-                log('Введите значение первой стороны:')
-                b = inputNum()
-                log('Введите значение первой стороны:')
-                c = inputNum()
-                P = a + b + c
-                log(P)
+                arbitraryTriangle()
+
             if typeOfTriangle == 2:
-                log('Введите значение боковой стороны:')
-                a = inputNum()
-                log('Введите значение основания треугольника:')
-                b = inputNum()
-                P = a * 2 + b
-                log(P)
+                isoscelesTriangle()
             else:
-                log('Введите значение стороны:')
-                a = inputNum()
-                P = a * 3
-                log(P)
+               equilateralTriangle()
+
         if shapes == 5:
-            log('1 - произвольная')
-            log('2 - равнобедренная')
-            log('Выберете вид трапеции:')
-            typeOfTrapezoid = inputNum()
+            typeOfTrapezoid = figureFive()
+
             if typeOfTrapezoid == 1:
-                log('Введите значение первой стороны:')
-                a = inputNum()
-                log('Введите значение второй стороны:')
-                b = inputNum()
-                log('Введите значение третьей стороны:')
-                c = inputNum()
-                log('Введите значение четвертой стороны:')
-                d = inputNum()
-                P = a + b + c + d
-                log(P)
+                arbitraryTrapezoid()
+
             else:
-                log('Введите длину боковой стороны:')
-                a = inputNum()
-                log('Введите длину верхнего основания:')
-                b = inputNum()
-                log('Введите длину нижнего основания стороны:')
-                c = inputNum()
-                P = a * 2 + b + c
-                log(P)
+                isoscelesTrapezoid()
+
     if nextAction == 2:
-        log('1 - круг')
-        log('2 - прямоугольник')
-        log('3 - квадрат')
-        log('4 - треугольник')
-        log('5 - трапеция')
-        log('6 - ромб')
-        log('7 - параллелограмм')
-        log('Введите номер фигуры:')
-        shapes = inputNum()
+        shapes = secondFigures()
+
         if shapes == 1:
-                log('Введите значение радиуса:')
-                r = inputNum()
-                Q = pi* r * r
-                log(Q)
+            squaresFiguresOne()
+
         if shapes == 2:
-            log('Введите значение  одной стороны:')
-            a = inputNum()
-            log('Введите значение другой стороны:')
-            b = inputNum()
-            S = a * b
-            log(S)
+            squaresFiguresTwo()
+
         if shapes == 3:
-            log('Введите значение стороны:')
-            a = inputNum()
-            S = a * a
-            log(S)
+           squaresFiguresThree()
+
         if shapes == 4:
-            log('Введите значение стороны:')
-            a = inputNum()
-            log('Введите значение высоты:')
-            b = inputNum()
-            S = a * b
-            log(S)
+            squaresFiguresFour()
+
         if shapes == 5:
-            log('Введите значение основания стороны:')
-            a = inputNum()
-            log('Введите значение основания стороны:')
-            b = inputNum()
-            log('Введите значение высоты:')
-            h = inputNum()
-            S =(a + b * h) / 2
-            log(S)
+            squaresFiguresFive()
+
         if  shapes == 6:
-            log('1 - 1/2 произведение диагоналей')
-            log('2 - сторона и высота ')
-            log('Выберете способ:')
-            methodOfFinding = inputNum()
+            methodOfFinding = squaresFiguresSix()
+
             if methodOfFinding == 1:
-                log('Введите длину  первой диагонали:')
-                d1 = inputNum()
-                log('Введите длину второй диагонали:')
-                d2 = inputNum()
-                S = 0.5 * d1 * d2
-                log(S)
+                formulaForFindingOne()
+
             else:
-                log('Введите значение основания:')
-                a = inputNum()
-                log('Введите значение высоты:')
-                h = inputNum()
-                S = a * h
-                log(S)
+                formulaForFindingTwo()
+
         if shapes == 7:
-              log('Введите значение основания:')
-              a = inputNum()
-              log('Введите значение высоты:')
-              h = inputNum()
-              S = a * h
-              log(S)
+            squaresFiguresSeven()
+
     if nextAction == 3:
-        log('1 - куб')
-        log('2 - шар')
-        log('3 - параллелепипед')
-        log('Введите номер фигуры:')
-        Z = inputNum()
+        shapes = volumeFigures()
+
         if shapes == 1:
-            log('Введите размер грани')
-            a = inputNum()
-            V = a**3
-            print(V)
+            volumeFigureOne()
+
         if shapes == 2:
-            log('Введите значение радиуса')
-            r = inputNum()
-            V = 3/4 * pi* r
-            print(V)
+            volumeFigureTwo()
+
         if shapes == 3:
-           log('Bведите размер площади основания')
-           S = inputNum()
-           log('Bведите длину высоты')
-           h = inputNum()
-           V = S * h
-           print(V)
+            volumeFigureThree()
